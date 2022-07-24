@@ -25,4 +25,3 @@ public class GetSocMembers {
         return client.send(request, HttpResponse.BodyHandlers.ofString());
     }
 }
-
