@@ -30,6 +30,16 @@ public class GetSocMembers {
     public static void main(String[] args) throws IOException, InterruptedException {
         getMembersFromPage(getSocMembersPage());
         System.out.println("Found " + allMembers.size() + " members");
+        System.out.println(isMemberFromId(0));
+    }
+
+    public static boolean isMemberFromId(int id){
+        for(Member member : allMembers){
+            if(member.id() == id){
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void getMembersFromPage(HttpResponse<String> membersPage) {
