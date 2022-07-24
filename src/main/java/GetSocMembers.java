@@ -33,9 +33,9 @@ public class GetSocMembers {
         System.out.println(isMemberFromId(0));
     }
 
-    public static boolean isMemberFromId(int id){
-        for(Member member : allMembers){
-            if(member.id() == id){
+    public static boolean isMemberFromId(int id) {
+        for (Member member : allMembers) {
+            if (member.id() == id) {
                 return true;
             }
         }
