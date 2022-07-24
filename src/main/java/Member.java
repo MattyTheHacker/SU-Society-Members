@@ -1,12 +1,12 @@
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Member {
     private final String name;
     private final int id;
-    private final Date joinDate;
-    private final Date expireDate;
+    private final LocalDateTime joinDate;
+    private final LocalDateTime expireDate;
 
-    public Member(String name, int id, Date joinDate, Date expireDate) {
+    public Member(String name, int id, LocalDateTime joinDate, LocalDateTime expireDate) {
         this.name = name;
         this.id = id;
         this.joinDate = joinDate;
@@ -31,11 +31,11 @@ public class Member {
         return id;
     }
 
-    public Date getJoinDate() {
+    public LocalDateTime getJoinDate() {
         return joinDate;
     }
 
-    public Date getExpireDate() {
+    public LocalDateTime getExpireDate() {
         return expireDate;
     }
 
